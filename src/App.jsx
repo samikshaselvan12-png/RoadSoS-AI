@@ -44,7 +44,7 @@ function App() {
   };
 
   const handleSubmit = async () => {
-    const response = fetch("https://roadsos-ai.onrender.com/reports"), {
+    const response = fetch("https://roadsos-ai-fbfz.onrender.com/reports"), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(report),

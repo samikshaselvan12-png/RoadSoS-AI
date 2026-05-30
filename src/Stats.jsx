@@ -4,7 +4,7 @@ function Stats() {
   const [reports, setReports] = useState([]);
 
   useEffect(() => {
-    fetch("https://roadsos-ai.onrender.com/reports")
+    fetch("https://roadsos-ai-fbfz.onrender.com/statistics")
       .then(res => res.json())
       .then(data => setReports(data))
       .catch(() => setReports([]));
