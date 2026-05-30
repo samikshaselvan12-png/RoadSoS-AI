@@ -43,12 +43,11 @@ function App() {
     );
   };
 
-  const handleSubmit = async () => {
-    const response = fetch("https://roadsos-ai-fbfz.onrender.com/reports"), {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(report),
-    });
+ const response = await fetch("https://roadsos-ai-fbfz.onrender.com/reports", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(report),
+});
     const data = await response.json();
     if (data.success) {
       setShowForm(false);
