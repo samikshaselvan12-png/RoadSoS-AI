@@ -4,7 +4,7 @@ function Admin() {
   const [reports, setReports] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/reports")
+    fetch("https://roadsos-ai.onrender.com/reports")
       .then((res) => res.json())
       .then((data) => setReports(data));
   }, []);
